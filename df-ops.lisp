@@ -15,20 +15,20 @@
   "summarize dataframe for orientation"
 
   (pprint
-   (ls:column-names df))
+   (lisp-stat:column-names df))
 
   (let (;; row count
-        (r (length (ls:rows df)))
+        (r (length (lisp-stat:rows df)))
         ;; col count
-        (c (length (ls:column-names df))))
+        (c (length (lisp-stat:column-names df))))
     (format t "~&~%row,col:~A,~A~%" r c))
 
   (when column
-    (print (ls:column df column)))
+    (print (lisp-stat:column df column)))
 
   (when ends
-    (ls:head df)
-    (ls:tail df)))
+    (lisp-stat:head df)
+    (lisp-stat:tail df)))
 
 (defun plateorg-df->map (df col-codes col-names)
   "
