@@ -23,7 +23,7 @@
 ;;   (setf ocicl-runtime:*local-only* t)
 
 ;; load
-;;   (asdf:load-system :lamb.files.vcf)
+;;   (asdf:load-system :metarepl.file-type.vcf)
 
 ;; clone repos if Component :SYSTEM not found in ocicl
 ;;   git clone https://github.com/user/repo.git ~/common-lisp/repo

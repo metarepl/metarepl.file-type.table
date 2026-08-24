@@ -1,6 +1,6 @@
-(defsystem "lamb.files.table"
+(defsystem "metarepl.file-type.table"
   :description "xlsx csv open, convert and report, df manipulations"
-  :author "common-lamb (https://github.com/common-lamb)"
+  :author "metarepl (https://github.com/metarepl)"
   :version "0.0.1"
   :license "MIT"
   :depends-on (
@@ -19,7 +19,7 @@
                ;; clone
                :filepaths
                :lisp-xl
-               :lamb.base.click
+               :shelter
                :lisp-stat
                )
   :serial t
